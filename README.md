@@ -14,7 +14,9 @@ Possible Words:
 ```
 
 -b is the list of letters which are known bad
+
 -k is the known letters and their position from a 5 letter word. Use underscore for unknown positions
+
 -p is for letters that are known to exist but the position is unknown. 
 
 
