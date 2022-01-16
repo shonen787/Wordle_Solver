@@ -1,6 +1,4 @@
 #import library of the english dictionary
-from dataclasses import KW_ONLY
-from xml.dom import WrongDocumentErr
 import argparse
 import sys
 import enchant
@@ -33,7 +31,7 @@ def generate_words(wordlist,bad,known_letters,possible_letters):
                if ''.join(i)[key] == value:
                    guard += 1
             for z in possible_letters:
-                if z not in ''.join(i):
+                if z.capitalize() not in ''.join(i):
                     guard = 0
             if guard == len(known_letters):
                 wordlist.append(''.join(i))         
@@ -66,4 +64,5 @@ if __name__ == "__main__":
 
     generate_words(wordlist,bad,known_letters,possible_letters)
     print('\033c')
+    print("Possible Words:\n")
     print(wordlist)

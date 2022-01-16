@@ -6,7 +6,11 @@ Python code used to solve the wordle problem
 This code is try and help solve the wordle games. This assumes you've put in a couple guesses. Three guesses seems to be sufficient, could be wrong...
 Run the code and use the following arguments for the usage. 
 ```
-python main.py -b tblermethuj -k _A___ -p CN
+python .\main.py -b tblermethjukgf -k _A___ -p pn
+
+Possible Words:
+
+['CAPON', 'PAINS', 'PANIC', 'PANSY', 'PAWNS', 'YAPON']
 ```
 
 -b is the list of letters which are known bad
