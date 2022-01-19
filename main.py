@@ -28,8 +28,8 @@ def generate_words(wordlist,bad,known_letters,possible_letters):
             sys.stdout.flush()
             guard = 0
             for key, value in known_letters.items():
-               if ''.join(i)[key] == value:
-                   guard += 1
+               if ''.join(i)[key] == value.capitalize():
+                   guard += 1                
             for z in possible_letters:
                 if z.capitalize() not in ''.join(i):
                     guard = 0
